@@ -1,0 +1,31 @@
+    @cadastrar_usuario
+    Funcionalidade: Cadastrar Novo Usuario
+    Como um usuário do sistema
+    Eu quero efetuar cadastro de usuarios novos
+    De modo que tenham acesso ao sistema
+    
+    Contexto: possibilidade de acessar o sistema
+    Dado que usuario possa acessar o sistema
+    E tenha acesso a funcionalidade Cadastro de Usuario
+    
+    Cenário: Cadastro de Pessoa Fisica
+    Quando cadastro um usuario Pessoa Fisica <CPF>
+    E inserir todos os campos obrigatorios
+    Então o sistema deve exibir a mensagem de confirmação de cadastro
+    
+    Exemplos:
+    |CPF            |
+    |24670037870    |
+    |99988877712    |
+    |77788896321    |
+    
+    Cenário: Cadastro de Pessoa Juridica
+    Quando cadastro um usuario Pessoa Juridica <CNPJ>
+    E inserir todos os campos obrigatorios
+    Então o sistema deve exibir a mensagem de confirmação de cadastro
+        
+    Exemplos:
+    |CNPJ           |
+    |25366485000185 |
+    |22233355500122 |
+    |78525236200232 |
